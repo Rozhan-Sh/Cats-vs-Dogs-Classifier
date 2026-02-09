@@ -19,7 +19,7 @@ A custom Convolutional Neural Network (CNN) built from scratch to classify image
 ### 1. Install dependencies
 Create a virtual environment (recommended) and install the required packages:
 
-`bash
+```bash
 # Optional: Create and activate virtual environment
 python -m venv venv
 source venv/bin/activate   # Linux/macOS
@@ -74,3 +74,4 @@ Add a validation set and early stopping
 Experiment with advanced augmentation, learning rate scheduling, and hyperparameter tuning
 Made with ❤️ and PyTorch
 Feel free to fork, star, or reach out!
+
