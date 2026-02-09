@@ -32,19 +32,17 @@ Or use the provided requirements file:
 pip install -r requirements.txt
 ```
 ### 2. Download the dataset
-```bash
-Download the dataset from Kaggle:
-https://www.kaggle.com/datasets/salader/dogs-vs-cats
-Extract the zip file
-Ensure the folder structure is:
-archive/
-├── train/
-│   ├── cats/
-│   └── dogs/
-└── test/
-    ├── cats/
-    └── dogs/
-```
+- Download the dataset from Kaggle:
+- https://www.kaggle.com/datasets/salader/dogs-vs-cats
+- Extract the zip file
+- Ensure the folder structure is:
+- archive/
+- ├── train/
+- │   ├── cats/
+- │   └── dogs/
+- └── test/
+-     ├── cats/
+-     └── dogs/
 
 ### 3. Run the training
 ```bash
@@ -82,4 +80,5 @@ Add a validation set and early stopping
 Experiment with advanced augmentation, learning rate scheduling, and hyperparameter tuning
 Made with ❤️ and PyTorch
 Feel free to fork, star, or reach out!
+
 
