@@ -7,7 +7,7 @@ A custom Convolutional Neural Network (CNN) built from scratch to classify image
 - Data augmentation techniques to improve generalization
 - Trained with Adam optimizer and CrossEntropyLoss
 - Evaluated on train and test sets
-
+---
 ## Results
 - Number of trainable parameters: 26,144,962
 - Final Train Accuracy: 64.27%
@@ -74,4 +74,5 @@ Listed in requirements.txt:
 - Experiment with advanced augmentation, learning rate scheduling, and hyperparameter tuning
 - Made with ❤️ and PyTorch
 - Feel free to fork, star, or reach out!
+
 
