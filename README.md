@@ -32,6 +32,7 @@ Or use the provided requirements file:
 pip install -r requirements.txt
 ```
 ### 2. Download the dataset
+```bash
 Download the dataset from Kaggle:
 https://www.kaggle.com/datasets/salader/dogs-vs-cats
 Extract the zip file
@@ -43,8 +44,10 @@ archive/
 └── test/
     ├── cats/
     └── dogs/
+```
 
 ### 3. Run the training
+```bash
 Execute the main script:
 python main.py
 The script will:
@@ -53,20 +56,25 @@ Train the CNN for 20 epochs
 Print loss per step and average loss per epoch
 Evaluate accuracy on train and test sets
 Save the trained model as cat_dog_model_final.pth
+```
 
 ## Model Architecture
+```bash
 Convolutional layers: 3 → 32 → 64 → 128 → 256 filters (with padding)
 MaxPooling (2×2) after each conv layer
 Dropout (0.3) after the first fully connected layer
 Fully connected layers: 256×14×14 → 512 → 128 → 2 (2 classes: cat/dog)
+```
 
 ## Requirements
 Listed in requirements.txt:
+```bash
 torch
 torchvision
 torchaudio
 numpy
 matplotlib
+```
 
 ## Future Improvements
 Implement transfer learning (e.g., ResNet18 or EfficientNet) for higher accuracy
@@ -74,3 +82,4 @@ Add a validation set and early stopping
 Experiment with advanced augmentation, learning rate scheduling, and hyperparameter tuning
 Made with ❤️ and PyTorch
 Feel free to fork, star, or reach out!
+
