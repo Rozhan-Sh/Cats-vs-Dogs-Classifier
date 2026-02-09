@@ -89,7 +89,8 @@ numpy
 matplotlib
 
 ---
-## Future Improvements
+Future Improvements
+
 Implement transfer learning (e.g., ResNet18 or EfficientNet) for higher accuracy
 
 Add a validation set and early stopping
@@ -99,4 +100,5 @@ Experiment with advanced augmentation, learning rate scheduling, and hyperparame
 Made with ❤️ and PyTorch
 
 Feel free to fork, star, or reach out!
+
 
