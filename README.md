@@ -32,7 +32,7 @@ Or use the provided requirements file:
 pip install -r requirements.txt
 ```
 ### 2. Download the dataset
-- Download the dataset from Kaggle:
+Download the dataset from Kaggle:
 - https://www.kaggle.com/datasets/salader/dogs-vs-cats
 - Extract the zip file
 - Ensure the folder structure is:
@@ -74,3 +74,4 @@ Listed in requirements.txt:
 - Experiment with advanced augmentation, learning rate scheduling, and hyperparameter tuning
 - Made with ❤️ and PyTorch
 - Feel free to fork, star, or reach out!
+
