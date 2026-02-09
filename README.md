@@ -1,12 +1,12 @@
 # Cats vs Dogs Image Classifier with PyTorch CNN
 
-A custom Convolutional Neural Network (CNN) built from scratch to classify images of cats and dogs using the Kaggle Dogs vs Cats dataset.
+A custom Convolutional Neural Network (CNN) built from scratch to classify images of cats and dogs using a subset of the Kaggle Dogs vs Cats dataset.
 
 ## Project Overview
-- Trained on a subset of the Kaggle Dogs vs Cats dataset
 - Custom CNN architecture with 4 convolutional layers and dropout
-- Data augmentation to improve generalization
-- Training with Adam optimizer and CrossEntropyLoss
+- Data augmentation techniques to improve generalization
+- Trained with Adam optimizer and CrossEntropyLoss
+- Evaluated on train and test sets
 
 ## Results
 - Number of trainable parameters: 26,144,962
@@ -19,49 +19,58 @@ A custom Convolutional Neural Network (CNN) built from scratch to classify image
 ### 1. Install dependencies
 Create a virtual environment (recommended) and install the required packages:
 
-```bash
-# Create and activate virtual environment (optional but recommended)
+`bash
+# Optional: Create and activate virtual environment
 python -m venv venv
 source venv/bin/activate   # Linux/macOS
 venv\Scripts\activate      # Windows
 
 # Install dependencies
-pip install -r requirements.txt
-
-# Or directly:
 pip install torch torchvision torchaudio numpy matplotlib
 
-### 2. Download the dataset
+Or use the provided requirements file:
+pip install -r requirements.txt
+
+2. Download the dataset
 Download the dataset from Kaggle:
 https://www.kaggle.com/datasets/salader/dogs-vs-cats
+Extract the zip file
+Ensure the folder structure is:
+archive/
+├── train/
+│   ├── cats/
+│   └── dogs/
+└── test/
+    ├── cats/
+    └── dogs/
 
-# Extract the zip file
-Make sure you have these folders:
-archive/train/ (with subfolders cats/ and dogs/)
-archive/test/ (with subfolders cats/ and dogs/)
-
-### 3. Run the training
-Simply execute the script:
+3. Run the training
+Execute the main script:
 python main.py
-
-# The script will:
-Load and augment the data
+The script will:
+Load and augment the training data
 Train the CNN for 20 epochs
 Print loss per step and average loss per epoch
-Evaluate train and test accuracy
-Save the model as cat_dog_model_final.pth
+Evaluate accuracy on train and test sets
+Save the trained model as cat_dog_model_final.pth
 
-## Model Architecture:
-Conv layers: 3 → 32 → 64 → 128 → 256 filters (with padding)
-MaxPooling after each conv
-Dropout (0.3) after first fully connected layer
-FC layers: 2561414 → 512 → 128 → 2
+Model Architecture
+Convolutional layers: 3 → 32 → 64 → 128 → 256 filters (with padding)
+MaxPooling (2×2) after each conv layer
+Dropout (0.3) after the first fully connected layer
+Fully connected layers: 256×14×14 → 512 → 128 → 2 (2 classes: cat/dog)
 
-## Requirements:
-See requirements.txt for exact versions.
+Requirements
+Listed in requirements.txt:
+torch
+torchvision
+torchaudio
+numpy
+matplotlib
+
 Future Improvements
-Use transfer learning (ResNet18 or EfficientNet) for higher accuracy
-Add validation set and early stopping
-Experiment with more advanced augmentation and hyperparameters
+Implement transfer learning (e.g., ResNet18 or EfficientNet) for higher accuracy
+Add a validation set and early stopping
+Experiment with advanced augmentation, learning rate scheduling, and hyperparameter tuning
 Made with ❤️ and PyTorch
 Feel free to fork, star, or reach out!
