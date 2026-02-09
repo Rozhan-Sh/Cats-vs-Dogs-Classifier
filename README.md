@@ -42,17 +42,17 @@ Ensure the folder structure is:
 
 archive/
 
- ├── train/
+├── train/
  
- │   ├── cats/
+│  ├── cats/
  
- │   └── dogs/
+│  └── dogs/
  
- └── test/
+└── test/
  
-     ├── cats/
+   ├── cats/
      
-     └── dogs/
+   └── dogs/
 
 ### 3. Run the training
 Execute the main script:
@@ -87,6 +87,7 @@ torchaudio
 numpy
 
 matplotlib
+
 ---
 ## Future Improvements
 Implement transfer learning (e.g., ResNet18 or EfficientNet) for higher accuracy
@@ -98,3 +99,4 @@ Experiment with advanced augmentation, learning rate scheduling, and hyperparame
 Made with ❤️ and PyTorch
 
 Feel free to fork, star, or reach out!
+
